@@ -1,0 +1,45 @@
+{
+  "name": "bobo-guard",
+  "private": false,
+  "version": "0.1.0",
+  "description": "A local-first desktop guard for leaked secrets, risky repos, and developer security hygiene.",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "concurrently -k \"vite --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && electron .\"",
+    "dev:web": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yishuizhe/bobo-guard.git"
+  },
+  "keywords": [
+    "electron",
+    "security",
+    "secret-scanner",
+    "github-audit",
+    "developer-tools"
+  ],
+  "author": "yishuizhe",
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^1.23.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "concurrently": "^10.0.3",
+    "electron": "^43.0.0",
+    "oxlint": "^1.71.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "wait-on": "^9.0.10"
+  }
+}
