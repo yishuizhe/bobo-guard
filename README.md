@@ -1,5 +1,8 @@
 # Bobo Guard
 
+[![CI](https://github.com/yishuizhe/bobo-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/yishuizhe/bobo-guard/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Bobo Guard is a local-first desktop workbench for developers who ship with AI tools, GitHub repos, and too many scattered config files.
 
 It scans a project folder for leaked secrets, checks repository hygiene through the local GitHub credential, and produces a compact report you can copy into issues, PRs, or release notes.
